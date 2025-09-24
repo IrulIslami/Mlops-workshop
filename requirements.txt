@@ -1,0 +1,9 @@
+# requirements.txt
+pandas
+scikit-learn
+dvc[gdrive]
+mlflow
+uvicorn[standard]
+fastapi
+python-dotenv
+joblib
