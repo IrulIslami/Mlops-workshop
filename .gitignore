@@ -1,1 +1,32 @@
-.venv/
+mlflow.db
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Env & secrets
+.venv
+.env.*
+key.json
+
+# DVC artefak & cache (peserta yang akan buat sendiri)
+mlops-sentiment/.dvc/
+mlops-sentiment/.dvcignore
+mlops-sentiment/dvc.lock
+mlops-sentiment/*.dvc
+
+# Data & model hasil training
+mlops-sentiment/data/
+mlops-sentiment/models/model.pkl
+
+# MLflow lokal
+mlops-sentiment/mlruns/
+mlops-sentiment/mlflow.db
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+
+mlops-sentiment/metrics.json
+
