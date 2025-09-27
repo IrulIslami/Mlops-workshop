@@ -1,32 +1,44 @@
+# ===== MLflow DB jika dijalankan di root =====
 mlflow.db
 
-# Python cache
+# ===== Python cache =====
 __pycache__/
 *.pyc
 
-# Env & secrets
+# ===== Env & secrets =====
 .venv
+.env
 .env.*
 key.json
 
-# DVC artefak & cache (peserta yang akan buat sendiri)
+# ===== DVC artefak & cache (peserta yang akan buat sendiri) =====
 mlops-sentiment/.dvc/
 mlops-sentiment/.dvcignore
 mlops-sentiment/dvc.lock
 mlops-sentiment/*.dvc
+mlops-sentiment/.dvc/config.local
 
-# Data & model hasil training
-mlops-sentiment/data/
-mlops-sentiment/models/model.pkl
+# ===== Data & model (tetap jaga .gitkeep agar struktur ada) =====
+mlops-sentiment/data/*
+!mlops-sentiment/data/.gitkeep
+mlops-sentiment/data/raw/*
+!mlops-sentiment/data/raw/.gitkeep
 
-# MLflow lokal
+mlops-sentiment/models/*
+!mlops-sentiment/models/.gitkeep
+
+# Jika kamu mau spesifik juga:
+# mlops-sentiment/data/raw/dataset.csv
+# mlops-sentiment/models/model.pkl
+
+# ===== MLflow lokal (peserta akan hasilkan sendiri) =====
 mlops-sentiment/mlruns/
 mlops-sentiment/mlflow.db
 
-# Editor / OS
+# ===== Editor / OS =====
 .vscode/
 .idea/
 .DS_Store
 
+# ===== Metrics pipeline (dibuat saat eval) =====
 mlops-sentiment/metrics.json
-
