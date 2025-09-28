@@ -1,7 +1,0 @@
-pandas
-scikit-learn
-mlflow
-fastapi
-uvicorn[standard]
-joblib
-pyyaml
