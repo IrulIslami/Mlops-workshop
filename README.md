@@ -36,6 +36,9 @@ mlops-sentiment/
 
 ## 🔧 Setup & Instalasi
 
+### 0. Download data
+https://drive.google.com/drive/folders/1r82OahtkIN0_qNqV0xTwp3h5xaAPaAZq?usp=sharing
+
 ### 1. Prerequisites
 - Python 3.10+
 - Git + Git LFS
@@ -70,7 +73,7 @@ git lfs install
 
 ```bash
 dvc init
-dvc remote add -d gdrive_remote gdrive://<FOLDER_ID_GOOGLE_DRIVE>
+dvc add data/raw/dataset.csv
 dvc pull
 ```
 
