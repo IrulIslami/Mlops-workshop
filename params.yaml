@@ -1,0 +1,10 @@
+seed: 42
+split:
+  test_size: 0.2
+vectorizer:
+  max_features: 5000
+  ngram_range: [1, 2]   # unigram + bigram
+model:
+  C: 1.0
+  max_iter: 1000
+  penalty: l2
