@@ -63,23 +63,17 @@ source venv/bin/activate   # Linux/Mac
 pip install -r requirements.txt
 ```
 
-### 4. Setup Git LFS
 
-```bash
-git lfs install
-```
-
-### 5. Setup DVC
+### 4. Setup DVC
 
 ```bash
 dvc init
 dvc add data/raw/dataset.csv
-dvc pull
 ```
 
 > **Note:** Ganti `<FOLDER_ID_GOOGLE_DRIVE>` dengan ID folder Google Drive Anda.
 
-### 6. Jalankan MLflow UI (lokal)
+### 5. Jalankan MLflow UI (lokal)
 
 ```bash
 mlflow ui --backend-store-uri sqlite:///mlflow.db --host 0.0.0.0 --port 5000
