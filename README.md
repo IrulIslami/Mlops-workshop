@@ -50,7 +50,7 @@ https://drive.google.com/drive/folders/1r82OahtkIN0_qNqV0xTwp3h5xaAPaAZq?usp=sha
 
 ### 2. Clone Repository
 ```bash
-git clone https://github.com/<your-user>/mlops-sentiment.git
+git clone https://github.com/IrulIslami/Mlops-workshop.git
 cd mlops-sentiment
 ````
 
